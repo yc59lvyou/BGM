@@ -16,6 +16,7 @@ public class ComboOrder implements java.io.Serializable{
 	private String dshow;
 	private Timestamp stattime;
 	private Timestamp systime;
+	private long number;
 	public long getId() {
 		return id;
 	}
@@ -64,11 +65,17 @@ public class ComboOrder implements java.io.Serializable{
 	public void setSystime(Timestamp systime) {
 		this.systime = systime;
 	}
+	public long getNumber() {
+		return number;
+	}
+	public void setNumber(long number) {
+		this.number = number;
+	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 	public ComboOrder(long id, long cid, long uid, String dtel, String address, String dshow, Timestamp stattime,
-			Timestamp systime) {
+			Timestamp systime, long number) {
 		super();
 		this.id = id;
 		this.cid = cid;
@@ -78,6 +85,7 @@ public class ComboOrder implements java.io.Serializable{
 		this.dshow = dshow;
 		this.stattime = stattime;
 		this.systime = systime;
+		this.number = number;
 	}
 	public ComboOrder() {
 		super();
@@ -85,10 +93,8 @@ public class ComboOrder implements java.io.Serializable{
 	@Override
 	public String toString() {
 		return "ComboOrder [id=" + id + ", cid=" + cid + ", uid=" + uid + ", dtel=" + dtel + ", address=" + address
-				+ ", dshow=" + dshow + ", stattime=" + stattime + ", systime=" + systime + "]";
+				+ ", dshow=" + dshow + ", stattime=" + stattime + ", systime=" + systime + ", number=" + number + "]";
 	}
-
-	
 	
 	
 	
