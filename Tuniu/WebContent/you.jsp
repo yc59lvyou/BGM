@@ -84,12 +84,12 @@
 				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="海口到三亚三天两晚品牌游" target='_self'>
+							<a href="gonglueinfo.jsp" title="海口到三亚三天两晚品牌游" target='_self'>
 								<img class="cover-image" src='./static/image/1506322241.jpg' alt="海口到三亚三天两晚品牌游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="海口到三亚三天两晚品牌游" target='_self'>海口到三亚三天两晚品牌游</a>
+							<a href="gonglueinfo.jsp" title="海口到三亚三天两晚品牌游" target='_self'>海口到三亚三天两晚品牌游</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>660.00元</p>
 						</h4>
 					</div>
@@ -98,12 +98,12 @@
 				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="三亚-西沙三日游精华线" target='_self'>
+							<a href="gonglueinfo.jsp" title="三亚-西沙三日游精华线" target='_self'>
 								<img class="cover-image" src='./static/image/1506321574.jpg' alt="三亚-西沙三日游精华线" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="三亚-西沙三日游精华线" target='_self'>三亚-西沙三日游精华线</a>
+							<a href="gonglueinfo.jsp" title="三亚-西沙三日游精华线" target='_self'>三亚-西沙三日游精华线</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>1280.00元</p>
 						</h4>
 					</div>
@@ -112,12 +112,12 @@
 				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="豪华游轮 西沙七日游" target='_self'>
+							<a href="gonglueinfo.jsp" title="豪华游轮 西沙七日游" target='_self'>
 								<img class="cover-image" src='./static/image/1506321623.jpg' alt="豪华游轮 西沙七日游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="豪华游轮 西沙七日游" target='_self'>豪华游轮 西沙七日游</a>
+							<a href="gonglueinfo.jsp" title="豪华游轮 西沙七日游" target='_self'>豪华游轮 西沙七日游</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>4999.00元</p>
 						</h4>
 					</div>
@@ -126,12 +126,12 @@
 				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="海南三亚-西沙六日游" target='_self'>
+							<a href="gonglueinfo.jsp" title="海南三亚-西沙六日游" target='_self'>
 								<img class="cover-image" src='./static/image/1506321389.jpg' alt="海南三亚-西沙六日游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="海南三亚-西沙六日游" target='_self'>海南三亚-西沙六日游</a>
+							<a href="gonglueinfo.jsp" title="海南三亚-西沙六日游" target='_self'>海南三亚-西沙六日游</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>3880.00元</p>
 						</h4>
 					</div>
@@ -140,12 +140,12 @@
 				<li class=" ">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="三亚一地5天4晚“岛人行岛”豪华游" target='_self'>
+							<a href="gonglueinfo.jsp" title="三亚一地5天4晚“岛人行岛”豪华游" target='_self'>
 								<img class="cover-image" data-original='./static/image/1506321153.jpg' alt="三亚一地5天4晚“岛人行岛”豪华游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="三亚一地5天4晚“岛人行岛”豪华游" target='_self'>三亚一地5天4晚“岛人行岛”豪华游</a>
+							<a href="gonglueinfo.jsp" title="三亚一地5天4晚“岛人行岛”豪华游" target='_self'>三亚一地5天4晚“岛人行岛”豪华游</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>3680.00元</p>
 						</h4>
 					</div>
@@ -154,12 +154,12 @@
 				<li class=" ">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="天堂森林公园-亚龙湾沙滩1日游" target='_self'>
+							<a href="gonglueinfo.jsp" title="天堂森林公园-亚龙湾沙滩1日游" target='_self'>
 								<img class="cover-image" data-original='./static/image/1506307339.jpg' alt="天堂森林公园-亚龙湾沙滩1日游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="天堂森林公园-亚龙湾沙滩1日游" target='_self'>天堂森林公园-亚龙湾沙滩1日游</a>
+							<a href="gonglueinfo.jsp" title="天堂森林公园-亚龙湾沙滩1日游" target='_self'>天堂森林公园-亚龙湾沙滩1日游</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>145.00元</p>
 						</h4>
 					</div>
@@ -168,12 +168,12 @@
 				<li class=" ">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="【南海之梦号邮轮】西沙群岛4天3晚游" target='_self'>
+							<a href="gonglueinfo.jsp" title="【南海之梦号邮轮】西沙群岛4天3晚游" target='_self'>
 								<img class="cover-image" data-original='./static/image/1506319633.jpg' alt="【南海之梦号邮轮】西沙群岛4天3晚游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="【南海之梦号邮轮】西沙群岛4天3晚游" target='_self'>【南海之梦号邮轮】西沙群岛4天3晚游</a>
+							<a href="gonglueinfo.jsp" title="【南海之梦号邮轮】西沙群岛4天3晚游" target='_self'>【南海之梦号邮轮】西沙群岛4天3晚游</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>1680.00元</p>
 						</h4>
 					</div>
@@ -182,12 +182,12 @@
 				<li class=" ">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.html" title="（2天精品A线）绝美蜈支洲2日游" target='_self'>
+							<a href="gonglueinfo.jsp" title="（2天精品A线）绝美蜈支洲2日游" target='_self'>
 								<img class="cover-image" data-original='./static/image/1506310281.jpg' alt="（2天精品A线）绝美蜈支洲2日游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.html" title="（2天精品A线）绝美蜈支洲2日游" target='_self'>（2天精品A线）绝美蜈支洲2日游</a>
+							<a href="gonglueinfo.jsp" title="（2天精品A线）绝美蜈支洲2日游" target='_self'>（2天精品A线）绝美蜈支洲2日游</a>
 							<p class='margin-bottom-0 margin-top-0 red-600'>225.00元</p>
 						</h4>
 					</div>
@@ -214,24 +214,7 @@
 
   </div>
 </section>
-<footer>
-  <div class="foot-box">
-    <div class="width-box">
-      <div class="foot-left">
 <%@ include file="/public/foot.jsp" %>
-
-	    <p>本页面内容为网站演示数据，前台页面内容都可以在后台修改。</p>
-
-	  </div>
-      <div class="foot-right">
-        <div class="foot-lang">
-
-	    </div>
-	    <div class="powered_by_metinfo">Powered&nbsp;by&nbsp;<a href="" target="_blank" title="企业网站管理系统">breeze</a>&nbsp;5.3.19</div>
-	  </div>
-    </div>
-  </div>
-</footer>
 
 <button type="button" class="btn btn-icon btn-primary btn-squared met-scroll-top hide"><i class="icon wb-chevron-up" aria-hidden="true"></i></button>
 

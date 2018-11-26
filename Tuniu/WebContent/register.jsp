@@ -19,7 +19,7 @@
 				<div class="col-xs-6 col-sm-6 user-info">
 					<ol class="breadcrumb pull-right">
 
-					  <li><a href="index.html" title="返回首页">返回首页</a></li>
+					  <li><a href="index.jsp" title="返回首页">返回首页</a></li>
 					</ol>
 				</div>
 			</div>
@@ -204,10 +204,7 @@
 	</div>
 </div>
 
-<footer class="container met-footer">
-	<p>企业网站管理系统</p>
-
-</footer>
+<%@ include file="/public/foot.jsp" %>
 <script src="./static/js/seajs.js"></script>
 <script>
 	var pub = '',

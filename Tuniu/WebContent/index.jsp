@@ -411,68 +411,9 @@
 
   </div>
 </section>
-<footer>
-  <div class="foot-box">
-    <div class="width-box">
-      <div class="foot-left">
+<%@ include file="/public/foot.jsp" %>
 
-<div class="met-links">
-  <ol class="breadcrumb">
-    <li>友情链接 :</li>
-
-    <li>
-      <a href="http://www.baidu.com/" title="" target="_blank">
-
-        去哪儿网
-
-      </a>
-    </li>
-
-    <li>
-      <a href="http://www.baidu.com/" title="" target="_blank">
-
-        旅游网
-
-      </a>
-    </li>
-
-    <li>
-      <a href="http://www.baidu.com/" title="" target="_blank">
-
-        海南旅游网
-
-      </a>
-    </li>
-
-    <li>
-      <a href="http://www.baidu.com/" title="" target="_blank">
-
-        三亚旅游
-
-      </a>
-    </li>
-
-  </ol>
-</div>
-
-      <p>企业网站管理系统</p>
-
-    </div>
-      <div class="foot-right">
-        <div class="foot-lang">
-
-      </div>
-      <div class="powered_by_metinfo">Powered&nbsp;by&nbsp;<a href="http://www.breeze.cn/#copyright" target="_blank" title="企业网站管理系统">breeze</a>&nbsp;</div>
-    </div>
-    </div>
-  </div>
-</footer>
-
-<div class="weixin-box">
-  <b><em>X</em>分享到微信朋友圈</b>
-  <i></i>
-  <p>打开微信，使用“扫一扫”，点击右上角“分享到朋友圈”。</p>
-</div>
+<%@ include file="/public/wxbox.jsp" %>
 
 <button type="button" class="btn btn-icon btn-primary btn-squared met-scroll-top hide"><i class="icon wb-chevron-up" aria-hidden="true"></i></button>
 
