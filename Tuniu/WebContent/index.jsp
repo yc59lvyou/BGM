@@ -44,7 +44,7 @@
 
           <li class="price-li"><a title="四日游">四日游</a></li>
 
-          <li class="price-li"><a title="五日游">五日游</a></li>
+          <li class="price-li"><a title="五日游">3日游</a></li>
 
           <li class="price-li"><a title="六日游">六日游</a></li>
 
