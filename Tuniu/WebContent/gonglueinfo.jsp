@@ -56,25 +56,7 @@
     </div>
   </div>
 </section>
-<footer>
-  <div class="foot-box">
-    <div class="width-box">
-      <div class="foot-left">
-
 <%@ include file="/public/foot.jsp" %>
-
-      <p>企业网站管理系统</p>
-
-    </div>
-      <div class="foot-right">
-        <div class="foot-lang">
-
-      </div>
-      <div class="powered_by_metinfo">Powered&nbsp;by&nbsp;<a href="" target="_blank" title="企业网站管理系统">breeze</a>&nbsp;</div>
-    </div>
-    </div>
-  </div>
-</footer>
 <%@ include file="/public/wxbox.jsp" %>
 <button type="button" class="btn btn-icon btn-primary btn-squared met-scroll-top hide"><i class="icon wb-chevron-up" aria-hidden="true"></i></button>
 

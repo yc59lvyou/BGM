@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML>
 <html>
 <%@ include file="/public/huiyuanhead.jsp" %>
@@ -28,18 +29,21 @@
 
 <div class="login_index met-member">
 	<div class="container">
-		<form method="post" action="">
-			<input type="hidden" name="gourl" value="" />
+		<form method="post" action="user.s">
+			<input type="hidden" name="op" value="login" />
+			${msg }
 			<div class="form-group">
-				<input type="text" name="username" required class="form-control" placeholder="用户名/邮箱/手机"
+				<input type="text" name="username"  class="form-control" placeholder="用户名/邮箱/手机"
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
+				value="${param.username }"
 				>
 			</div>
 			<div class="form-group">
-				<input type="password" name="password" required class="form-control" placeholder="密码" 
+				<input type="password" name="userpwd" class="form-control" placeholder="密码" 
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
+				
 				>
 			</div>
 
@@ -53,10 +57,7 @@
 	</div>
 </div>
 
-<footer class="container met-footer">
-	<p>企业网站管理系统</p>
-
-</footer>
+<%@ include file="/public/foot.jsp" %>
 <script src="./static/js/seajs.js"></script>
 <script>
 	var pub = './',
@@ -73,5 +74,13 @@
 	});
 	//seajs.use("tem/js/own"); //载入入口模块
 </script>
+
+<!-- jstl -->
+<c:if test="${!empty msg}">
+	<script type="text/javascript">
+		alert('${msg}')
+	</script>
+</c:if>  
+
 </body>
 </html>
