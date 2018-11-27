@@ -19,7 +19,7 @@
 				<div class="col-xs-6 col-sm-6 user-info">
 					<ol class="breadcrumb pull-right">
 
-					  <li><a href="index.html" title="返回首页">返回首页</a></li>
+					  <li><a href="index.jsp" title="返回首页">返回首页</a></li>
 					</ol>
 				</div>
 			</div>
