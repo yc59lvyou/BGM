@@ -33,20 +33,28 @@
 			<input type="hidden" name="op" value="login" />
 			${msg }
 			<div class="form-group">
-				<input type="text" name="username"  class="form-control" placeholder="用户名/邮箱/手机"
+				<input type="text" name="account"  class="form-control" placeholder="用户名/邮箱/手机"
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
-				value="${param.username }"
+				value="${param.account }"
 				>
 			</div>
 			<div class="form-group">
-				<input type="password" name="userpwd" class="form-control" placeholder="密码" 
+				<input type="password" name="pwd" class="form-control" placeholder="密码" 
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
 				
 				>
 			</div>
-
+		
+		<!-- jstl方法 -->
+		<c:set var="a" value='${failNumber }' ></c:set>
+		<c:if test="${a>=3 }">
+			<!-- 图片验证码 -->
+			<input type="text" name="code" style="width: 100px"> 
+			<img border=0 src="image.jsp">
+		</c:if>
+			
 			<div class="login_link"><a href="">忘记密码？</a></div>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
 

@@ -16,6 +16,8 @@ public class User implements java.io.Serializable{
 	private String tel;
 	private Timestamp createDate;
 	private String status;
+	private long failNumber;
+	private String mailbox;
 	public long getId() {
 		return id;
 	}
@@ -58,10 +60,23 @@ public class User implements java.io.Serializable{
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	public long getFailNumber() {
+		return failNumber;
+	}
+	public void setFailNumber(long failNumber) {
+		this.failNumber = failNumber;
+	}
+	public String getMailbox() {
+		return mailbox;
+	}
+	public void setMailbox(String mailbox) {
+		this.mailbox = mailbox;
+	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	public User(long id, String name, String account, String pwd, String tel, Timestamp createDate, String status) {
+	public User(long id, String name, String account, String pwd, String tel, Timestamp createDate, String status,
+			long failNumber, String mailbox) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -70,6 +85,8 @@ public class User implements java.io.Serializable{
 		this.tel = tel;
 		this.createDate = createDate;
 		this.status = status;
+		this.failNumber = failNumber;
+		this.mailbox = mailbox;
 	}
 	public User() {
 		super();
@@ -77,8 +94,12 @@ public class User implements java.io.Serializable{
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", account=" + account + ", pwd=" + pwd + ", tel=" + tel
-				+ ", createDate=" + createDate + ", status=" + status + "]";
+				+ ", createDate=" + createDate + ", status=" + status + ", failNumber=" + failNumber + ", mailbox="
+				+ mailbox + "]";
 	}
+	
+	
+	
 
 	
 }
