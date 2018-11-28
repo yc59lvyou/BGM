@@ -20,16 +20,43 @@ import Biz.UserBiz;
 @WebServlet("/user.s")
 public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+
     private UserBiz ubiz = new UserBiz();
+
+	
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String op = request.getParameter("op");
 		if("login".equals(op)){
 			login(request,response);
+		}else if("registers".equals(op)){
+			registers(request,response);
 		}
 	}
 
+	//注册界面
+	private void registers(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
+/*		String  username=request.getParameter("username");
+		String  useracount=request.getParameter("useracount");
+		String  password=request.getParameter("password");
+		String  tel=request.getParameter("tel");
+		String  email=request.getParameter("email");*/
+		
+		User user=BeanUtils.asBean(request, User.class);
 	
+		try {
+			ubiz.add(user);
+		} catch (BizException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			response.sendRedirect("login.jsp");
+		}
+		
+				
+	}
+
+
 	private void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		//接收页面传回的参数
 		//将参数加载到 user对象中

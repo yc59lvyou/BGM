@@ -28,13 +28,14 @@
 
 <div class="register_index met-member">
 	<div class="container">
-		<form class="form-register met-form" method="post" action="">
+		<form class="form-register met-form" method="post" action="user.s">
+			<input type="hidden" value="registers"  name="op">
 		
 
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-user"></i></span>
-					<input type="text" name="username" required class="form-control" placeholder="会员名"
+					<input type="text" name="name" required class="form-control" placeholder="会员名  张三"
 					data-bv-remote="true"
 					data-bv-remote-url="" 
 					data-bv-remote-message="用户名已存在"
@@ -54,8 +55,29 @@
 			
 			<div class="form-group">
 				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input type="text" name="account" required class="form-control" placeholder="账号名  zhangsan"
+					data-bv-remote="true"
+					data-bv-remote-url="" 
+					data-bv-remote-message="账号已存在"
+					
+					data-bv-notempty="true"
+					data-bv-notempty-message="此项不能为空"
+					
+					data-bv-stringlength="true"
+					data-bv-stringlength-min="2"
+					data-bv-stringlength-max="30"
+					data-bv-stringlength-message="账号必须在2-30个字符之间"
+					/>
+
+				</div>
+			</div>
+			
+			
+			<div class="form-group">
+				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
-					<input type="password" name="password" required class="form-control" placeholder="密码"
+					<input type="password" name="pwd" required class="form-control" placeholder="密码"
 					data-bv-notempty="true"
 					data-bv-notempty-message="此项不能为空"
 					
@@ -74,17 +96,65 @@
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
-					<input type="password" name="confirmpassword" required data-password="password" class="form-control" placeholder="重复密码"
+					<input type="password" name="confirmpassword" required data-password="pwd" class="form-control" placeholder="重复密码"
 					
 					
 					data-bv-identical="true"
-					data-bv-identical-field="password"
+					data-bv-identical-field="pwd"
 					data-bv-identical-message="两次密码输入不一致"
 					data-bv-notempty-message="此项不能为空"
 					>
 					
 				</div>
 			</div>
+			
+			
+						
+			
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input type="text" name="tel" required class="form-control" placeholder="电话"
+					data-bv-remote="true"
+					data-bv-remote-url="" 
+					data-bv-remote-message="电话号码已经存在"
+					
+					data-bv-notempty="true"
+					data-bv-notempty-message="此项不能为空"
+					
+					data-bv-stringlength="true"
+					data-bv-stringlength-min="11"
+					data-bv-stringlength-max="11"
+					data-bv-stringlength-message="电话号码只能是11位的"
+					/>
+
+				</div>
+			</div>
+			
+			
+					
+						
+			
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input type="text" name="email" required class="form-control" placeholder="邮箱"
+					data-bv-remote="true"
+					data-bv-remote-url="" 
+					data-bv-remote-message="邮箱已经存在"
+					
+					data-bv-notempty="true"
+					data-bv-notempty-message="此项不能为空"
+					
+					data-bv-stringlength="true"
+					data-bv-stringlength-min="3"
+					data-bv-stringlength-max="16"
+					data-bv-stringlength-message="邮箱的格式不对"
+					/>
+
+				</div>
+			</div>
+			
 			
 			<div class="row login_code">
 				<div class="col-xs-8">
@@ -100,12 +170,14 @@
 					</div>
 				</div>
 				<div class="col-xs-4 login_code_img">
-					<img src="./static/image/entrance.jpg" class="img-responsive" id="getcode" title="看不清？点击更换验证码" align="absmiddle">
+					<!-- <img src="./static/image/entrance.jpg" class="img-responsive" id="getcode" title="看不清？点击更换验证码" align="absmiddle"> -->
+					<input type="button" value="获取验证码" name="aa">
+					
 				</div>
 			</div>
 
 
-			<div class="form-group met-more text-muted">
+<!-- 			<div class="form-group met-more text-muted">
 				<hr />
 				<span>更多资料</span>
 			</div>
@@ -124,11 +196,6 @@
 
 	
 	
-	
-	
-	
-	
-
 
 			<div class="form-group met-form-choice">				
 				<div class="row">
@@ -170,7 +237,7 @@
 						<input type="text" name="info_112" class="form-control" value=""  placeholder="公司网址">
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 
 			<button class="btn btn-lg btn-primary btn-block" type="submit">立即注册</button>
@@ -180,6 +247,8 @@
 </div>
 
 <%@ include file="/public/foot.jsp" %>
+
+
 <script src="./static/js/seajs.js"></script>
 <script>
 	var pub = '',
