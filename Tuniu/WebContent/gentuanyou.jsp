@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -137,7 +139,7 @@
 					</div>
 				</li>
 
-				<li class=" ">
+				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
 							<a href="gonglueinfo.jsp" title="三亚一地5天4晚“岛人行岛”豪华游" target='_self'>
@@ -151,7 +153,7 @@
 					</div>
 				</li>
 
-				<li class=" ">
+				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
 							<a href="gonglueinfo.jsp" title="天堂森林公园-亚龙湾沙滩1日游" target='_self'>
@@ -165,7 +167,7 @@
 					</div>
 				</li>
 
-				<li class=" ">
+				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
 							<a href="gonglueinfo.jsp" title="【南海之梦号邮轮】西沙群岛4天3晚游" target='_self'>
@@ -179,7 +181,7 @@
 					</div>
 				</li>
 
-				<li class=" ">
+				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
 							<a href="gonglueinfo.jsp" title="（2天精品A线）绝美蜈支洲2日游" target='_self'>

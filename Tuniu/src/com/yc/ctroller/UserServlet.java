@@ -39,8 +39,8 @@ public class UserServlet extends HttpServlet {
 		String piccode = (String)request.getSession().getAttribute("piccode");
 		//用户输入的验证码
 		String code = request.getParameter("code");
-		System.out.println(piccode);
-		System.out.println(code);
+		//System.out.println(piccode);
+		//System.out.println(code);
 		
 		
 		User user2 = null;
