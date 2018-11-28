@@ -33,7 +33,7 @@
 			<input type="hidden" name="op" value="login" />
 			${msg }
 			<div class="form-group">
-				<input type="text" name="username"  class="form-control" placeholder="用户名/邮箱/手机"
+				<input type="text" name="name"  class="form-control" placeholder="用户名/邮箱/手机"
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
 				value="${param.name }"
