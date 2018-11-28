@@ -14,8 +14,17 @@ public class User implements java.io.Serializable{
 	private String account;
 	private String pwd;
 	private String tel;
+	private String email;
 	private Timestamp createDate;
 	private String status;
+	
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public long getId() {
 		return id;
 	}
@@ -61,23 +70,18 @@ public class User implements java.io.Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	public User(long id, String name, String account, String pwd, String tel, Timestamp createDate, String status) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.account = account;
-		this.pwd = pwd;
-		this.tel = tel;
-		this.createDate = createDate;
-		this.status = status;
-	}
+	
+	
+	
+	
+
 	public User() {
 		super();
 	}
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", account=" + account + ", pwd=" + pwd + ", tel=" + tel
-				+ ", createDate=" + createDate + ", status=" + status + "]";
+				+ ", email=" + email + ", createDate=" + createDate + ", status=" + status + "]";
 	}
 
 	

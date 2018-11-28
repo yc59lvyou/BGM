@@ -17,9 +17,21 @@ public class UserBiz {
 		
 		String sql = "select * from user where account = ? and pwd = ?";
 		return DBHelper.unique(sql, User.class, username,userpwd);
+	}
+
+	public void add(User user) throws BizException {
+		if ( user.getName() == null || user.getName().trim().isEmpty()) {
+			throw new BizException("请填写用户名!!");
+		}else if( user.getAccount() == null || user.getAccount().trim().isEmpty()) {
+			throw new BizException("请填写账号!!");
+		}	
 		
-		
+		String sql="insert into user (name,account,pwd,tel,email) values(?,?,?,?,?)";
+		DBHelper.insert(sql, user.getName(),user.getAccount(),user.getPwd(),user.getTel(),user.getEmail());
+
 		
 	}
+
+
 
 }

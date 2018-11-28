@@ -36,7 +36,7 @@
 				<input type="text" name="username"  class="form-control" placeholder="用户名/邮箱/手机"
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
-				value="${param.username }"
+				value="${param.name }"
 				>
 			</div>
 			<div class="form-group">
@@ -51,7 +51,7 @@
 			<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
 
 
-			<a class="btn btn-lg btn-info btn-block" href="">没有账号？现在去注册</a> 
+			<a class="btn btn-lg btn-info btn-block" href="register.jsp">没有账号？现在去注册</a> 
 			
 		</form>
 	</div>
