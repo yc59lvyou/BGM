@@ -139,12 +139,6 @@
 				</div>
 			</div>
 
-	
-	
-	
-	
-	
-	
 
 
 			<div class="form-group met-form-choice">				
@@ -157,12 +151,6 @@
 			</div>
 
 	
-	
-	
-	
-	
-	
-
 
 			<div class="form-group met-form-choice">				
 				<div class="row">
@@ -175,12 +163,6 @@
 
 	
 	
-	
-	
-	
-	
-
-
 			<div class="form-group met-form-choice">				
 				<div class="row">
 					<div class="met-form-file-title col-md-3">公司网址</div>
@@ -190,16 +172,9 @@
 				</div>
 			</div>
 
-	
-	
-	
-	
-	
-	
-
 
 			<button class="btn btn-lg btn-primary btn-block" type="submit">立即注册</button>
-			<div class="login_link"><a href="">已有账号？</a></div>
+			<div class="login_link"><a href="login.jsp">已有账号？</a></div>
 		</form>
 	</div>
 </div>
