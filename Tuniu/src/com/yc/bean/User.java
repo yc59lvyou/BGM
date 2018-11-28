@@ -17,10 +17,10 @@ public class User implements java.io.Serializable{
 	private String email;
 	private Timestamp createDate;
 	private String status;
-<<<<<<< HEAD
+
 	private long failNumber;
 	private String mailbox;
-=======
+
 	
 	
 	public String getEmail() {
@@ -29,7 +29,7 @@ public class User implements java.io.Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
->>>>>>> branch 'master' of https://github.com/yc59lvyou/BGM.git
+
 	public long getId() {
 		return id;
 	}
@@ -87,7 +87,7 @@ public class User implements java.io.Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-<<<<<<< HEAD
+
 	public User(long id, String name, String account, String pwd, String tel, Timestamp createDate, String status,
 			long failNumber, String mailbox) {
 		super();
@@ -101,25 +101,25 @@ public class User implements java.io.Serializable{
 		this.failNumber = failNumber;
 		this.mailbox = mailbox;
 	}
-=======
+
 	
 	
 	
 	
 
->>>>>>> branch 'master' of https://github.com/yc59lvyou/BGM.git
+
 	public User() {
 		super();
 	}
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", account=" + account + ", pwd=" + pwd + ", tel=" + tel
-<<<<<<< HEAD
+
 				+ ", createDate=" + createDate + ", status=" + status + ", failNumber=" + failNumber + ", mailbox="
 				+ mailbox + "]";
-=======
-				+ ", email=" + email + ", createDate=" + createDate + ", status=" + status + "]";
->>>>>>> branch 'master' of https://github.com/yc59lvyou/BGM.git
+
+				
+
 	}
 	
 	
