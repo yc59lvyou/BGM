@@ -13,13 +13,13 @@
 
     <div class="slick-slide">
         
-      <img class="cover-image" data-size="1170_100" src="./static/image/1506069563.jpg" srcset='' sizes="(max-width: 767px) 767px" alt="">
+      <img class="cover-image" height=580px data-size="1170_100" src="./static/image/1506069563.jpg" srcset='' sizes="(max-width: 767px) 767px" alt="">
    
         </div>  
 
     <div class="slick-slide">
         
-      <img class="cover-image" data-size="1170_100" data-lazy="./static/image/1506073462.jpg" srcset='' sizes="(max-width: 767px) 767px" alt="">
+       <img class="cover-image" height=580px data-size="1170_100" data-lazy="./static/image/1506073462.jpg" srcset='' sizes="(max-width: 767px) 767px" alt="">
    
         </div>  
 
@@ -27,7 +27,7 @@
     </div>
   </div>
 </section>
-  
+<!--   
 <section class="main">
   <div class="width-box">
 
@@ -410,7 +410,7 @@
     </div>
 
   </div>
-</section>
+</section> -->
 <%@ include file="/public/foot.jsp" %>
 
 <%@ include file="/public/wxbox.jsp" %>
