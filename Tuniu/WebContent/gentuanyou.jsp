@@ -1,8 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<!DOCTYPE HTML>
+<%
+	//System.out.print(request.getAttribute("comboList"));
+	//判断有没有用户列表数据，如果没有这跳转到 user.s?op=query
+	if( request.getAttribute("comboList") == null ){
+		request.getRequestDispatcher("combo.s?op=queryRecommend").forward(request, response);
+	} 
+%> 
+<!doctype html>
+<html lang="zh-CN">
 <html>
 <head>
 <title>跟团游-旅游景点旅行社网站</title>
@@ -42,11 +49,11 @@
         <ol class="column-ul">
 
           <li class="column-li active">
-		    <a href="../gent/" title="跟团游" >热门推荐</a>
+		    <a href="gentuanyou.jsp" title="跟团游" >热门推荐</a>
 		  </li>
 
-          <li class="column-li  ">
-		    <a href="../gent/product.php?lang=cn&class2=110" title="一日游" >一日游</a>
+          <li class="column-li ">
+		    <a href="yiriyou.jsp" title="一日游" >一日游</a>
 		  </li>
 
           <li class="column-li  ">
@@ -55,19 +62,19 @@
 
           <li class="column-li  ">
 		    <a href="../gent/product.php?lang=cn&class2=112" title="三日游" >三日游</a>
-		  </li>
+		  </li> 
 
-          <li class="column-li  ">
+          <!-- <li class="column-li  ">
 		    <a href="../gent/product.php?lang=cn&class2=113" title="四日游" >四日游</a>
-		  </li>
+		  </li> -->
 
           <li class="column-li  ">
 		    <a href="../gent/product.php?lang=cn&class2=114" title="五日游" >五日游</a>
 		  </li>
 
-          <li class="column-li  ">
+          <!-- <li class="column-li  ">
 		    <a href="../gent/product.php?lang=cn&class2=115" title="六日游" >六日游</a>
-		  </li>
+		  </li> -->
 
           <li class="column-li  ">
 		    <a href="../gent/product.php?lang=cn&class2=116" title="七日游" >七日游</a>
@@ -82,22 +89,26 @@
 	<div class="container">
         <ul class="blocks-2 blocks-sm-2 blocks-md-3 blocks-xlg-3  met-page-ajax met-grid" id="met-grid" data-scale='0.66666666666667'>
 
-
+		<c:forEach items="${comboList }" var="c">
+		
 				<li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
-							<a href="gonglueinfo.jsp" title="海口到三亚三天两晚品牌游" target='_self'>
-								<img class="cover-image" src='./static/image/1506322241.jpg' alt="海口到三亚三天两晚品牌游" style='height:200px;'>
+							<a href="comboInfo.jsp?arrange=${c.arrange }&description=${c.description}" title="海口到三亚三天两晚品牌游" target='_self'>
+								<img class="cover-image" name="tphoto" src='${c.tphoto }' alt="海口到三亚三天两晚品牌游" style='height:200px;'>
 							</a>
 						</figure>
 						<h4 class="widget-title">
-							<a href="gonglueinfo.jsp" title="海口到三亚三天两晚品牌游" target='_self'>海口到三亚三天两晚品牌游</a>
-							<p class='margin-bottom-0 margin-top-0 red-600'>660.00元</p>
+							<a href="comboInfo.jsp?arrange=${c.arrange }description=${c.description}" title="海口到三亚三天两晚品牌游" target='_self' name="tname">${c.tname }</a>
+							<p class='margin-bottom-0 margin-top-0 red-600' name="price">${c.price }</p>
 						</h4>
 					</div>
 				</li>
-
-				<li class=" shown">
+				
+		</c:forEach>
+		
+		
+				<!-- <li class=" shown">
 					<div class="widget widget-shadow">
 						<figure class="widget-header cover">
 							<a href="gonglueinfo.jsp" title="三亚-西沙三日游精华线" target='_self'>
@@ -193,7 +204,7 @@
 							<p class='margin-bottom-0 margin-top-0 red-600'>225.00元</p>
 						</h4>
 					</div>
-				</li>
+				</li> -->
 
 
         </ul>

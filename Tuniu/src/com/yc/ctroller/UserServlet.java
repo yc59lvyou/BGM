@@ -36,14 +36,8 @@ public class UserServlet extends HttpServlet {
 
 	//注册界面
 	private void registers(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
-/*		String  username=request.getParameter("username");
-		String  useracount=request.getParameter("useracount");
-		String  password=request.getParameter("password");
-		String  tel=request.getParameter("tel");
-		String  email=request.getParameter("email");*/
-		
-		User user=BeanUtils.asBean(request, User.class);
 	
+		User user=BeanUtils.asBean(request, User.class);
 		try {
 			ubiz.add(user);
 		} catch (BizException e) {
@@ -90,15 +84,22 @@ public class UserServlet extends HttpServlet {
 			request.getRequestDispatcher("login.jsp").forward(request, response);
 			
 		}else{
+			//跳出验证码
 			if(code!=null){
+				//输入正确的验证码    即登录成功
 				if(code.equals(piccode)){
 					ubiz.clearFailNumber(user);
 					request.getSession().setAttribute("loginedUser",user2);
 					response.sendRedirect("index.jsp");
 					return;
+				}else{
+					request.setAttribute("msg", "您输入的验证码有误");
+					request.setAttribute("failNumber", ubiz.fail(user).getFailNumber());
+					request.getRequestDispatcher("login.jsp").forward(request, response);
 				}
 			}
 			
+			//未跳出验证码  
 			if(code==null){
 				//成功
 				//将用户信息保存到会话中

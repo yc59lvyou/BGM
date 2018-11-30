@@ -21,10 +21,10 @@
         </ul>
       </div>
 
-      <div class="card-active">
+     <!-- <div class="card-active">
         <h4>自助游攻略</h4>
         <ul>
-
+			
           <li>
             <a href="../zizhu/showproduct.php?lang=cn&id=55" title="海南-三亚三天三夜自助游">
               <img class="lazyloads" data-original='./static/image/1506311787.jpg' alt="海南-三亚三天三夜自助游">
@@ -47,7 +47,15 @@
           </li>
 
         </ul>
-      </div>
+      </div>  -->
+      
+      <div class="card-hots">
+		  		<p>出发城市：<input type="text" style="height: 25px;"></p>
+		  		<p>出游日期：<input type="text" style="height: 25px;"></p>
+		  		<p>出游人数：<input type="text" style="height: 25px;"></p>
+		  		<input type="button" value="立即预定" style="background-color: orange;width: 100px;height: 50px;color: #FFFFFF">
+		  		<input type="button" value="扫码预定" style="width: 100px;background-color: #FFFFFF;color: orange">
+	  </div>
 
       <div class="card-hots">
         <h4>为您推荐</h4>

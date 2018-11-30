@@ -53,7 +53,7 @@
 				>
 			</div>
 		
-		<!-- jstl方法 -->
+		<!-- 登录三次失败出现验证码 -->
 		<c:set var="a" value='${failNumber }' ></c:set>
 		<c:if test="${a>=3 }">
 			<!-- 图片验证码 -->

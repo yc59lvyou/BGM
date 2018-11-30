@@ -3,7 +3,7 @@
 <%@page import="java.awt.Color"%>
 <%@page import="java.awt.Graphics"%>
 <%@page import="java.awt.image.BufferedImage"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="images/jpg; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -14,7 +14,7 @@
 <body>
 	<%
 	//这个方法实现验证码的生成
-    BufferedImage bi=new BufferedImage(68, 22,BufferedImage.TYPE_INT_RGB);//创建图像缓冲区
+     BufferedImage bi=new BufferedImage(68, 22,BufferedImage.TYPE_INT_RGB);//创建图像缓冲区
      Graphics g=bi.getGraphics(); //通过缓冲区创建一个画布
      Color c=new Color(200,150,255); //创建颜色
      /*根据背景画了一个矩形框
