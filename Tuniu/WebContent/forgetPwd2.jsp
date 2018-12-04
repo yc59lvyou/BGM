@@ -4,11 +4,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Author" contect="http://www.webqin.net">
+<meta name="Author" contect="http://www.webqin.net"/>
 <title>忘记密码</title>
 <link rel="shortcut icon" href="images/favicon.ico" />
 <link type="text/css" href="./static/css/css.css" rel="stylesheet" />
-<script type="text/javascript" src="js/jquery-1.8.3-min.js"></script>
+<script type="text/javascript" src="./static/js/jquery-1.8.3-min.js"></script>
 <script type="text/javascript">
  //导航定位
  $(function(){
@@ -26,10 +26,14 @@
 			 }
 		 })
 	 })
+ 
+ 
 </script>
 </head>
 
+<%@ include file="/public/huiyuanhead.jsp" %>
 <body>
+<%@ include file="/public/notpwd.jsp" %>
 
   <div class="content">
    <div class="web-width">
@@ -45,8 +49,9 @@
        <div class="liutext"><em>4</em><br /><strong>完成</strong></div>
       </div>
      </div><!--for-liucheng/-->
-     <form action="forgetPwd3.jsp" method="get" class="forget-pwd">
-       <dl>
+     <form action="forgetPwd3.jsp?emdis=${emdis }" method="get" class="forget-pwd">
+      <input name="op" type="hidden" value="pwd2" />
+       <!-- <dl>
         <dt>验证方式：</dt>
         <dd>
          <select class="selyz">
@@ -55,31 +60,53 @@
          </select>
         </dd>
         <div class="clears"></div>
-       </dl>
-       <dl>
+       </dl> -->
+       <!-- <dl>
         <dt>用户名：</dt>
         <dd><input type="text" /></dd>
         <div class="clears"></div>
-       </dl>
-       <dl class="sel-yzsj">
+       </dl> -->
+       <!-- <dl class="sel-yzsj">
         <dt>已验证手机：</dt>
         <dd><input type="text" value="1851****517" readonly  /></dd>
         <div class="clears"></div>
-       </dl>
+       </dl> -->
        <dl class="sel-yzyx">
-        <dt>已验证邮箱：</dt>
-        <dd><input type="text" value="764852123@qq.com" readonly /></dd>
+        <dt>验证邮箱：</dt>
+        <dd><input type="text" id="emdis" name="emdis" value=""  onblur="ck()"/>
+        <span id="youxiang" style="color: red;"></span></dd>
         <div class="clears"></div>
        </dl>
        <dl>
-        <dt>手机校验码：</dt>
-        <dd><input type="text" /> <button>获取短信验证码</button></dd>
+        <dt>验证码：</dt>
+        <dd><input type="text" /> <button>获取邮箱验证码</button></dd>
         <div class="clears"></div>
        </dl>
        <div class="subtijiao"><input type="submit" value="提交" /></div> 
       </form><!--forget-pwd/-->
    </div><!--web-width/-->
   </div><!--content/-->
-  
+<script type="text/javascript">
+
+function ck(){
+	 var data={};
+		data.mailbox=$('#emdis').val();
+		
+		$.post("user.s?op=Pwd2",data,
+			function(data){
+			var a1=document.getElementById("youxiang");
+			if(data=="yes"){
+				a1.innerHTML="";
+			}else if(data=="no"){
+				a1.innerHTML="该账户的邮箱不匹配";
+			}else{
+				a1.innerHTML="邮箱不能为空";
+			}
+			/* alert(data);
+			window.location.reload(); *///自动刷新本页面
+			}		
+		);
+}
+</script>
 </body>
 </html>

@@ -18,7 +18,7 @@ public class StringUtils {
 	}
 
 	/**
-	 * 捕获字符串的中的组
+	 * 捕获字符串的中的�?
 	 * 
 	 * @param str
 	 * @param regex
@@ -39,7 +39,7 @@ public class StringUtils {
 	}
 
 	/**
-	 * 捕获字符串的中的组(组中有组)
+	 * 捕获字符串的中的�?(组中有组)
 	 * 
 	 * @param str
 	 * @param regex

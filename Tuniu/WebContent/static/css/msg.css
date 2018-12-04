@@ -1,0 +1,132 @@
+.title h1{
+    display: inline;
+    font-size: 22px;
+    color: #333;
+    line-height: 32px;
+    font-weight: normal;
+}
+.s-label{
+    margin-top: 7px;
+    clear: both;
+}
+.s-label span{
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px dashed #ff7000;
+    color: #ff7000;
+    line-height: 18px;
+    padding: 0 6px;
+}
+.title .shop-icon{
+    border: 1px solid #80aaff;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    line-height: 18px;
+    padding: 0 6px;
+    background: #80aaff;
+    margin-top: 5px;
+}
+.price-panel{
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #f6f6f6;
+    font-size: 12px;
+    color: #999;
+}
+.price-panel ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.price-panel ul li {
+    padding: 0 15px 0 0;
+}
+.item-price em{
+    font-size: 18px;
+    color: #ff6f00;
+    font-family: "Microsoft Yahei";
+    font-style: normal;
+}
+.item-price strong{
+    font-size: 34px;
+    color: #ff6f00;
+    font-family: "Tahoma";
+    font-weight: normal;
+}
+.item-price span{
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    top: 0;
+}
+.item-price span>a{
+    background-color: transparent;
+    text-decoration: none;
+    color: #ff9d00;
+    cursor: pointer;
+}
+.label{
+    float: left;
+    width: 70px;
+    padding-left: 5px;
+    color: #999;
+}
+.info-panel{
+    margin: 15px 0;
+    line-height: 20px;
+}
+.promo-bd{
+    width: 400px;
+}
+.promo-bd span{
+    background-color: #ff9d00;
+    display: inline-block;
+    margin-right: 7px;
+    color: #fff;
+    padding: 0 6px;
+}
+.info-tips-box{
+    overflow: hidden;
+}
+.info-tips-box ul li{
+    float: left;
+    padding: 0 5px 5px 5px;
+}
+hr{
+    margin: 20px 0;
+    border-bottom: 1px dotted #d6d6d6;
+    height: 0;
+    overflow: hidden;
+}
+.action-panel{
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: #f6f6f6;
+}
+.total{
+    float: left;
+    padding-left: 20px;
+    margin-left: 8px;
+}
+.total em{
+    font-size: 18px;
+    color: #ff6f00;
+    font-family: "Microsoft Yahei";
+    font-style: normal;
+}
+.buy{
+    float: right;
+    width: 130px;
+}
+.buy a {
+    display: block;
+    height: 50px;
+    background-color: #ff9d00;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 1px;
+    line-height: 50px;
+    text-align: center;
+}

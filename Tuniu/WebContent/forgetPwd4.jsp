@@ -4,13 +4,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Author" contect="http://www.webqin.net">
+<meta name="Author" contect="http://www.webqin.net" />
 <title>忘记密码</title>
 <link rel="shortcut icon" href="images/favicon.ico" />
 <link type="text/css" href="./static/css/css.css" rel="stylesheet" />
 </head>
 
+<%@ include file="/public/huiyuanhead.jsp" %>
 <body>
+<%@ include file="/public/notpwd.jsp" %>
 
   <div class="content">
      <div class="for-liucheng">

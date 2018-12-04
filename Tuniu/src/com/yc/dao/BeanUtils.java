@@ -24,22 +24,22 @@ public class BeanUtils {
 	 * @return
 	 */
 	public static <T> T toBean(ServletRequest request, T t) {
-		//输入的值对象t为空则退出
+		//输入的�?�对象t为空则�??�?
 		if (t == null)
 			return t;
 		for (Field f : getAllFields(t.getClass())) {
-			//获取参数值
+			//获取参数�?
 			String svalue = request.getParameter(f.getName());
-			//空值跳过
+			//空�?�跳�?
 			if (svalue == null)
 				continue;
 			try {
-				//声明转换后的值变量
+				//声明转换后的值变�?
 				Object ovalue = cast(svalue, f.getType());
 				f.setAccessible(true);
 				f.set(t, ovalue);
 			} catch (Exception e) {
-				System.err.println("请求参数解析错误：参数名=" + f.getName() + "，字段类型=" + f.getType() + "，参数值=" + svalue);
+				System.err.println("请求参数解析错误：参数名=" + f.getName() + "，字段类�?=" + f.getType() + "，参数�??=" + svalue);
 			}
 		}
 
@@ -64,10 +64,10 @@ public class BeanUtils {
 	}
 
 	/**
-	 * 将字符串转成指定的类型，如果 输入值为空，或者转换过程出现异常，则返回默认值
+	 * 将字符串转成指定的类型，如果 输入值为空，或�?�转换过程出现异常，则返回默认�??
 	 * @param svalue
 	 * @param cls
-	 * @param defaultValue 默认值
+	 * @param defaultValue 默认�?
 	 * @return
 	 */
 	public static <T> T cast(String svalue, Class<T> cls, T defaultValue) {
@@ -86,7 +86,7 @@ public class BeanUtils {
 
 	@SuppressWarnings("unchecked")
 	/**
-	 * 将变量值转成指定的类型
+	 * 将变量�?�转成指定的类型
 	 * @param svalue
 	 * @param cls
 	 * @return
@@ -125,9 +125,9 @@ public class BeanUtils {
 			case "java.lang.Character":
 				String s = "" + value;
 				return (T) Character.valueOf(s.length() == 0 ? null : s.charAt(0));
-			case "java.sql.Date": // 注意：接收日期类型有格式的问题
+			case "java.sql.Date": // 注意：接收日期类型有格式的问�?
 				return (T) java.sql.Date.valueOf("" + value);
-			case "java.sql.Timestamp": // 注意：接收日期类型有格式的问题
+			case "java.sql.Timestamp": // 注意：接收日期类型有格式的问�?
 				return (T) java.sql.Timestamp.valueOf("" + value);
 			default:
 				return (T) value;
@@ -180,7 +180,7 @@ public class BeanUtils {
 	}
 
 	/**
-	 * 返回第一个不为空的值
+	 * 返回第一个不为空的�??
 	 * @param values
 	 * @return
 	 */
@@ -194,10 +194,10 @@ public class BeanUtils {
 	}
 
 	/**
-	 * 从对象中获取一个字段值
+	 * 从对象中获取�?个字段�??
 	 * @param bean		对象
-	 * @param fieldName	字段名
-	 * @return			字段值
+	 * @param fieldName	字段�?
+	 * @return			字段�?
 	 */
 	public static Object getValue(Object bean, String fieldName) {
 		Class<?> cls = bean.getClass();
@@ -206,21 +206,21 @@ public class BeanUtils {
 			Field field = cls.getDeclaredField(fieldName);
 			// 设置字段可以直接访问
 			field.setAccessible(true);
-			// 返回字段值
+			// 返回字段�?
 			return field.get(bean);
 		} catch (NoSuchFieldException | SecurityException e) {
-			System.out.printf("%s没有这个字段：%s", cls.getName(), fieldName);
+			System.out.printf("%s没有这个字段�?%s", cls.getName(), fieldName);
 		} catch (IllegalArgumentException | IllegalAccessException e) {
-			System.out.printf("%s无法获取该字段值：%s", cls.getName(), fieldName);
+			System.out.printf("%s无法获取该字段�?�：%s", cls.getName(), fieldName);
 		}
 		return null;
 	}
 
 	/**
-	 * 从对象中获取一个字段值
+	 * 从对象中获取�?个字段�??
 	 * @param bean		对象
-	 * @param fieldName	字段名
-	 * @return			字段值
+	 * @param fieldName	字段�?
+	 * @return			字段�?
 	 */
 	public static void setValue(Object bean, String fieldName, Object value) {
 		Class<?> cls = bean.getClass();
@@ -229,17 +229,17 @@ public class BeanUtils {
 			Field field = cls.getDeclaredField(fieldName);
 			// 设置字段可以直接访问
 			field.setAccessible(true);
-			// 返回字段值
+			// 返回字段�?
 			field.set(bean, value);
 		} catch (NoSuchFieldException | SecurityException e) {
-			System.out.printf("%s没有这个字段：%s", cls.getName(), fieldName);
+			System.out.printf("%s没有这个字段�?%s", cls.getName(), fieldName);
 		} catch (IllegalArgumentException | IllegalAccessException e) {
-			System.out.printf("%s无法设置该字段值：%s", cls.getName(), fieldName);
+			System.out.printf("%s无法设置该字段�?�：%s", cls.getName(), fieldName);
 		}
 	}
 
 	/**
-	 * 迭代一个对象，该对象可以是：数组、集合、Map、实体对象
+	 * 迭代�?个对象，该对象可以是：数组�?�集合�?�Map、实体对�?
 	 * @param items
 	 * @param fields
 	 * @return
@@ -264,7 +264,7 @@ public class BeanUtils {
 		final Object[] _fields = fields;
 
 		/**
-		 * 对 items 进行迭代
+		 * �? items 进行迭代
 		 */
 		return new Iterable<Object>() {
 			@Override

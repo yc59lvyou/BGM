@@ -17,7 +17,6 @@ public class User implements java.io.Serializable{
 	private String email;
 	private Timestamp createDate;
 	private String status;
-
 	private long failNumber;
 	private String mailbox;
 
@@ -29,6 +28,7 @@ public class User implements java.io.Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 
 	public long getId() {
 		return id;
@@ -88,6 +88,8 @@ public class User implements java.io.Serializable{
 		return serialVersionUID;
 	}
 
+
+
 	public User(long id, String name, String account, String pwd, String tel, Timestamp createDate, String status,
 			long failNumber, String mailbox) {
 		super();
@@ -114,12 +116,8 @@ public class User implements java.io.Serializable{
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", account=" + account + ", pwd=" + pwd + ", tel=" + tel
-
 				+ ", createDate=" + createDate + ", status=" + status + ", failNumber=" + failNumber + ", mailbox="
 				+ mailbox + "]";
-
-				
-
 	}
 	
 	

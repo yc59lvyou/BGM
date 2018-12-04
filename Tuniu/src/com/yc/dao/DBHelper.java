@@ -28,7 +28,7 @@ import java.util.Vector;
 public class DBHelper {
 	public static String URL = "jdbc:mysql://127.0.0.1/tuniu";
 	public static String USR = "root";
-	public static String PWD = "a";
+	public static String PWD = "aaaaaa";
 	public static String DRV = "com.mysql.jdbc.Driver";
 
 	static {
@@ -37,7 +37,7 @@ public class DBHelper {
 
 	private static void init() {
 		try {
-			System.out.println("数据库URL�?" + URL);
+			System.out.println("数据库URL�??" + URL);
 			Class.forName(DRV);
 		} catch (ClassNotFoundException ex) {
 			throw new RuntimeException(ex);
@@ -86,8 +86,8 @@ public class DBHelper {
 		try {
 			int i = 1;
 			for (Object o : params) {
-				// 如果元素是一个集合，则取出所有集合里的元素作为参�?
-				// 不确定的参数类型，直接使用setObject，让jdbc去转�?
+				// 如果元素是一个集合，则取出所有集合里的元素作为参�??
+				// 不确定的参数类型，直接使用setObject，让jdbc去转�??
 				if (o != null && o instanceof Collection) {
 					for (Object p : (Collection<Object>) o) {
 						System.out.println("参数" + i + "=" + p);
@@ -109,7 +109,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * 查询结果，返�? 集合类型�? Vector ，元素类型类型也�? Vector 的结果集
+	 * 查询结果，返�?? 集合类型�?? Vector ，元素类型类型也�?? Vector 的结果集
 	 * 
 	 * @param sql
 	 * @param params
@@ -121,7 +121,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * 查询结果，以指定的实例类作为元素类型返回 List 结果�?
+	 * 查询结果，以指定的实例类作为元素类型返回 List 结果�??
 	 * 
 	 * @param sql
 	 * @param b
@@ -134,7 +134,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * 查询结果，以Map作为元素类型返回 List 结果�?
+	 * 查询结果，以Map作为元素类型返回 List 结果�??
 	 * 
 	 * @param sql
 	 * @param params
@@ -148,13 +148,13 @@ public class DBHelper {
 
 	/**
 	 * @param sql
-	 *            执行的查询语�?
+	 *            执行的查询语�??
 	 * @param c
 	 *            返回集合的类型，如：ArrayList、Vector
 	 * @param b
 	 *            返回元素的类型，如：HashMap、Vector、ArrayList、实体类
 	 * @param params
-	 *            参数：可变数组参数，没有参数则不�?
+	 *            参数：可变数组参数，没有参数则不�??
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
@@ -180,7 +180,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * insert 方法，新增完成后返回自增主键值，注意：该方法不支持批�? insert
+	 * insert 方法，新增完成后返回自增主键值，注意：该方法不支持批�?? insert
 	 * 
 	 * @param sql
 	 * @param params
@@ -206,7 +206,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * 构建 where 后面�? col1=? and col2=? 语句�?
+	 * 构建 where 后面�?? col1=? and col2=? 语句�??
 	 * 
 	 * @param entity
 	 * @param paramList
@@ -265,7 +265,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * 构建 update 语句后面�? set col1=?,col2=?,col3=? where id=? 语句�?
+	 * 构建 update 语句后面�?? set col1=?,col2=?,col3=? where id=? 语句�??
 	 * 
 	 * @param entity
 	 * @param paramList
@@ -307,7 +307,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * 构建 insert 语句后面�? (col1,col2,col3) values (?,?,?) 语句�?
+	 * 构建 insert 语句后面�?? (col1,col2,col3) values (?,?,?) 语句�??
 	 * 
 	 * @param entity
 	 * @param paramList
@@ -350,7 +350,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * �? 结果�? �? toList
+	 * �?? 结果�?? �?? toList
 	 * 
 	 * @param rs
 	 * @param c
@@ -387,7 +387,7 @@ public class DBHelper {
 		while (rs.next()) {
 			t = (B) b.newInstance();
 			/**
-			 * 将结果集设置�? Collection 集合�?
+			 * 将结果集设置�?? Collection 集合�??
 			 */
 			if (t instanceof Collection) {
 				Collection<Object> coll = (Collection<Object>) t;
@@ -395,7 +395,7 @@ public class DBHelper {
 					coll.add(rs.getObject(colnames[i]));
 				}
 				/**
-				 * 将结果集设置�? Map 集合�?
+				 * 将结果集设置�?? Map 集合�??
 				 */
 			} else if (t instanceof Map) {
 				Map<String, Object> map = (Map<String, Object>) t;
@@ -407,7 +407,7 @@ public class DBHelper {
 				 */
 			} else {
 				for (int i = 0; i < colnames.length; i++) {
-					// 空�?�忽�?
+					// 空�?�忽�??
 					Object value = rs.getObject(colnames[i]);
 					if (value == null) {
 						continue;
@@ -465,7 +465,7 @@ public class DBHelper {
 									m.invoke(t, bytes);
 									break;
 								default:
-									System.out.println("未知类型�?" + clsName + "===>" + value + "，听天由命了�?");
+									System.out.println("未知类型�??" + clsName + "===>" + value + "，听天由命了�??");
 									m.invoke(t, value);
 								}
 								break;
@@ -514,7 +514,7 @@ public class DBHelper {
 	}
 
 	/**
-	 * 将sql语句返回的第�?行记录，转换�? Map 对象返回
+	 * 将sql语句返回的第�??行记录，转换�?? Map 对象返回
 	 * 
 	 * @param sql
 	 * @param params
@@ -525,14 +525,14 @@ public class DBHelper {
 		if (data == null || data.isEmpty()) {
 			return null;
 		} else if (data.size() > 1) {
-			throw new RuntimeException("返回的结果不是唯�?�?");
+			throw new RuntimeException("返回的结果不是唯�??�??");
 		} else {
 			return data.get(0);
 		}
 	}
 
 	/**
-	 * 将sql语句返回的第�?行记录，转换成指定的实体类（cls）对象返�?
+	 * 将sql语句返回的第�??行记录，转换成指定的实体类（cls）对象返�??
 	 * 
 	 * @param sql
 	 * @param cls
@@ -544,14 +544,14 @@ public class DBHelper {
 		if (data == null || data.isEmpty()) {
 			return null;
 		} else if (data.size() > 1) {
-			throw new RuntimeException("返回的结果不是唯�?�?");
+			throw new RuntimeException("返回的结果不是唯�??�??");
 		} else {
 			return data.get(0);
 		}
 	}
 
 	/**
-	 * 返回sql语句返回的第�?行记录的指定字段（cnt）的�?
+	 * 返回sql语句返回的第�??行记录的指定字段（cnt）的�??
 	 * 
 	 * @param sql
 	 * @param column
@@ -563,7 +563,7 @@ public class DBHelper {
 		if (data == null || data.isEmpty()) {
 			return null;
 		} else if (data.size() > 1) {
-			throw new RuntimeException("返回的结果不是唯�?�?");
+			throw new RuntimeException("返回的结果不是唯�??�??");
 		} else {
 			return data.get(0).get(column);
 		}
@@ -584,9 +584,9 @@ public class DBHelper {
 		 * 注意参数的顺序，分页参数放在后面
 		 *//*
 		List<Map<String, Object>> data = DBHelper.select(querySql, params, size * (page - 1), size);
-		// 查询总的记录�?
+		// 查询总的记录�??
 		String countSql = "select count(*) cnt from (" + sql + ") a";
-		// 返回sql语句返回的第�?行记录的指定字段（cnt）的�?
+		// 返回sql语句返回的第�??行记录的指定字段（cnt）的�??
 		long total = (long) unique(countSql, "cnt", params);
 		// 返回分页对象
 		return new Page<Map<String, Object>>(data, total);

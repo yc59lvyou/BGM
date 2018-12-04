@@ -34,24 +34,23 @@
 			${msg }
 			<div class="form-group">
 
-				<input type="text" name="account"  class="form-control" placeholder="用户名/邮箱/手机"
-
-				                        
+				<input type="text" name="account"  class="form-control" placeholder="用户名/邮箱/手机"                        
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
-
 				value="${param.account }"
-
-
 				>
+				
 			</div>
 			<div class="form-group">
 				<input type="password" name="pwd" class="form-control" placeholder="密码" 
 				data-bv-notempty="true"
 				data-bv-notempty-message="此项不能为空"
-				
 				>
 			</div>
+
+
+			<div class="login_link"><a href="demo.jsp" title="忘记密码">忘记密码？</a></div>
+
 		
 		<!-- 登录三次失败出现验证码 -->
 		<c:set var="a" value='${failNumber }' ></c:set>
@@ -60,13 +59,8 @@
 			<input type="text" name="code" style="width: 100px"> 
 			<img border=0 src="image.jsp">
 		</c:if>
-			
-			<div class="login_link"><a href="">忘记密码？</a></div>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-
-
 			<a class="btn btn-lg btn-info btn-block" href="register.jsp">没有账号？现在去注册</a> 
-			
 		</form>
 	</div>
 </div>
